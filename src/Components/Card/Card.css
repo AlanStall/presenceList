@@ -1,0 +1,19 @@
+
+.Card {
+    display: flex;
+    align-items: center;    
+    justify-content: space-between;
+
+    width: 54%;
+    background: lightgrey;    
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    border-radius: 3px;    
+}
+
+.Card p {
+    font-size: 14px;
+    font-weight: 200;
+    color:rgb(59, 59, 63);
+}
