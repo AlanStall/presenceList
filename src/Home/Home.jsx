@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Card } from "../Components/Card/Card.jsx";
+import { Card } from "../Components/Card.jsx";
 
 export function Home() {
   const [ studentName, setStudentName ] = useState("");
@@ -19,15 +19,16 @@ export function Home() {
 
   return (
     <>
-      <div className='bg-gray-200'>
-        <h1 className='text-blue-200'>Lista de Presença</h1>
+      <div className='hero min-h-screen bg-base-200 hero-content flex-col lg:flex-row'>
+        
+        <h1 className='text-white'>Olá olá</h1>
         <input 
           type="text" 
           placeholder="Digite o seu nome..." 
           className="input input-bordered"
           onChange={e => setStudentName(e.target.value)}
-        />
-        <button className='btn btn-primary ' onClick={createStudents}>Adicionar</button>
+        />        
+        <button className='btn btn-secundary ' onClick={createStudents}>Adicionar</button>
         {
           students.map(student => (
             <Card 
@@ -38,6 +39,7 @@ export function Home() {
           ))
         }
       </div>
+
     </>
 
     

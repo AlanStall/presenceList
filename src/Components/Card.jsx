@@ -1,4 +1,3 @@
-
 export function Card(props){
     return(
         <div className="Card">
@@ -7,6 +6,3 @@ export function Card(props){
     </div>
     )    
 }
-
-
-
