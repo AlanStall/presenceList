@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import './Home.css'
 import { Card } from "../Components/Card/Card.jsx";
 
 export function Home() {
@@ -19,24 +18,29 @@ export function Home() {
   }
 
   return (
-    <div className="container">
-      <h1>Lista de Presença</h1>
-      <input 
-        type="text" 
-        placeholder="Digite o seu nome..." 
-        onChange={e => setStudentName(e.target.value)}
-      />
-      <button type="button" onClick={createStudents}>Adicionar</button>
-    {
-      students.map(student => (
-        <Card 
-          key={student.time}
-          name={student.name}
-          time={student.time}
+    <>
+      <div className='bg-gray-200'>
+        <h1 className='text-blue-200'>Lista de Presença</h1>
+        <input 
+          type="text" 
+          placeholder="Digite o seu nome..." 
+          className="input input-bordered"
+          onChange={e => setStudentName(e.target.value)}
         />
-      ))
-    }
-    </div>
+        <button className='btn btn-primary ' onClick={createStudents}>Adicionar</button>
+        {
+          students.map(student => (
+            <Card 
+              key={student.time}
+              name={student.name}
+              time={student.time}
+            />
+          ))
+        }
+      </div>
+    </>
+
+    
   )
 }
 
