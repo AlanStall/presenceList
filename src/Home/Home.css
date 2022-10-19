@@ -4,14 +4,11 @@
     align-items: center;
     flex-direction: column;
 }
-
-
 .container h1 {
     font-size: 26px;
     margin-top: 30px;
     color:rgb(23, 106, 124);
 }
-
 .container input {
     width: 74%;
     background: lightgray;
@@ -23,7 +20,6 @@
     border: none;
     border-radius: 3px;
 }
-
 .container button {
     width: 30%;
     background: rgb(124, 119, 119);
@@ -37,7 +33,6 @@
     cursor: pointer;
     transition: filter 0.2s;
 }
-
 .container button:hover {
     filter: brightness(0.9);
 }

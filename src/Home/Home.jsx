@@ -27,7 +27,6 @@ export function Home() {
         onChange={e => setStudentName(e.target.value)}
       />
       <button type="button" onClick={createStudents}>Adicionar</button>
-
     {
       students.map(student => (
         <Card 
@@ -37,7 +36,6 @@ export function Home() {
         />
       ))
     }
-
     </div>
   )
 }
